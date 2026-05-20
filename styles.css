@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+min-height:100vh;
+background:
+linear-gradient(rgba(18,12,29,.76),rgba(18,12,29,.82)),
+url('https://images2.imgbox.com/0d/c2/9w7vM4xj_o.jpg');
+background-size:cover;
+background-position:center;
+color:#fff7eb;
+overflow-x:hidden;
+}
+.page{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+padding:32px;
+}
+.hero{
+flex:1;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+.content{
+width:min(1100px,100%);
+padding:42px;
+border-radius:38px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+.badge{
+display:inline-flex;
+padding:10px 16px;
+border-radius:999px;
+background:rgba(255,216,77,.15);
+border:1px solid rgba(255,216,77,.35);
+font-size:13px;
+font-weight:800;
+margin-bottom:22px;
+}
+h1{
+margin:0;
+font-size:clamp(44px,7vw,88px);
+line-height:.95;
+letter-spacing:-3px;
+background:linear-gradient(90deg,#fff9ca,#ffd84d,#ff9fc9,#b69cff);
+-webkit-background-clip:text;
+color:transparent;
+}
+p{
+max-width:760px;
+font-size:19px;
+line-height:1.8;
+color:rgba(255,247,235,.82);
+margin-top:24px;
+}
+.buttons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:18px;
+margin-top:42px;
+}
+.card{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:22px;
+text-decoration:none;
+color:#fff7eb;
+background:rgba(255,255,255,.10);
+border:1px solid rgba(255,255,255,.16);
+border-radius:28px;
+transition:.25s ease;
+backdrop-filter:blur(16px);
+box-shadow:0 16px 40px rgba(0,0,0,.25);
+}
+.card:hover{
+transform:translateY(-4px) scale(1.01);
+background:rgba(255,255,255,.16);
+border-color:rgba(255,216,77,.45);
+}
+.card strong{
+display:block;
+font-size:18px;
+margin-bottom:6px;
+}
+.card small{
+font-size:13px;
+color:rgba(255,247,235,.72);
+}
+.card span{
+font-size:26px;
+font-weight:900;
+}
+.disabled{
+opacity:.72;
+cursor:default;
+}
+.disabled:hover{
+transform:none;
+}
+footer{
+padding-top:24px;
+text-align:center;
+font-size:13px;
+color:rgba(255,247,235,.6);
+}
+@media(max-width:720px){
+.page{padding:18px}
+.content{padding:28px}
+p{font-size:16px}
+.buttons{grid-template-columns:1fr}
+}
