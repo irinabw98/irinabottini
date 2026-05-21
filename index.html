@@ -1,57 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Irina Apps</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irina Labs · Mis herramientas</title>
+  <meta name="description" content="Página de bienvenida para herramientas personales en desarrollo." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<main class="page">
-<header class="hero">
-<div class="overlay"></div>
-<div class="content">
-<span class="badge">✨ herramientas personales</span>
-<h1>Bienvenido a mis herramientas</h1>
-<p>
-Gracias por usar mis herramientas. Este es un espacio de uso personal,
-pensado para aplicaciones en desarrollo que hacen más fácil, feliz y lindo el día a día.
-</p>
-<div class="buttons">
-<a href="https://irinabw98.github.io/etiquetadorCP/" class="card">
-<div>
-<strong>🏷️ Etiquetador CP</strong>
-<small>Etiquetado y generación de PowerPoint</small>
-</div>
-<span>→</span>
-</a>
-<a href="https://irinabw98.github.io/CP_ANALISIS1" class="card">
-<div>
-<strong>📊 CP_ANALISIS1</strong>
-<small>ANOVA y clasificación estadística</small>
-</div>
-<span>→</span>
-</a>
-<a href="https://irinabw98.github.io/CP_FACTORIAL" class="card">
-<div>
-<strong>🧪 CP_FACTORIAL</strong>
-<small>Análisis factoriales y comparación de factores</small>
-</div>
-<span>→</span>
-</a>
-<div class="card disabled">
-<div>
-<strong>🚧 Próximamente</strong>
-<small>Nuevas herramientas en desarrollo</small>
-</div>
-<span>…</span>
-</div>
-</div>
-</div>
-</header>
-<footer>
-Hecho por Irina Bottini · espacio personal de desarrollo
-</footer>
-</main>
+  <div class="cinematic-intro" aria-hidden="true">
+    <div class="intro-card">
+      <span class="intro-logo">IL</span>
+      <strong>Irina Labs</strong>
+      <small>cargando herramientas lindas...</small>
+    </div>
+  </div>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Activar o pausar música ambiente">
+    <span class="sound-dot"></span>
+    <span id="soundLabel">Música ambiente</span>
+  </button>
+
+  <main class="page-shell">
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div>
+
+    <section class="hero">
+      <div class="collage" aria-hidden="true">
+        <figure class="photo p1"><img src="assets/homer-1.jpg" alt="" /></figure>
+        <figure class="photo p2"><img src="assets/homer-2.jpg" alt="" /></figure>
+        <figure class="photo p3"><img src="assets/homer-3.jpg" alt="" /></figure>
+        <figure class="photo p4"><img src="assets/homer-4.jpg" alt="" /></figure>
+      </div>
+
+      <article class="glass-card">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">IL</span>
+            <span>
+              <strong>Irina Labs</strong>
+              <small>herramientas personales</small>
+            </span>
+          </div>
+          <span class="status-pill">en desarrollo · con onda</span>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">✨ bienvenida al laboratorio</span>
+            <h1>Bienvenido a mis herramientas</h1>
+            <p>
+              Gracias por usar mis herramientas. Este es un espacio de uso personal,
+              pensado para aplicaciones en desarrollo que hacen más fácil, feliz y lindo el día a día.
+            </p>
+            <div class="note-card">
+              Pequeñas soluciones para ordenar tareas, ahorrar tiempo y trabajar con más alegría.
+            </div>
+          </div>
+
+          <aside class="preview-zone" aria-label="Mini vistas de aplicaciones">
+            <div class="preview-card preview-etiquetas">
+              <div class="preview-header"><span></span><span></span><span></span></div>
+              <div class="label-preview">
+                <b>HP26ARGC01</b>
+                <small>Localidad · Momento · Tratamiento</small>
+              </div>
+              <div class="fake-photo-row"><i></i><i></i><i></i></div>
+            </div>
+            <div class="preview-card preview-analisis">
+              <div class="bar-chart"><i></i><i></i><i></i><i></i><i></i></div>
+              <strong>ANOVA + Tukey</strong>
+            </div>
+            <div class="preview-card preview-factorial">
+              <div class="factor-grid"><i>A</i><i>B</i><i>A×B</i><i>α</i></div>
+              <strong>Factorial</strong>
+            </div>
+          </aside>
+        </div>
+
+        <section class="tools-grid" aria-label="Accesos directos">
+          <a class="tool-card" href="https://irinabw98.github.io/etiquetadorCP/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🏷️</span>
+            <span class="tool-copy">
+              <strong>Etiquetador CP</strong>
+              <small>Etiquetado visual y generación de PowerPoint.</small>
+            </span>
+            <span class="tool-arrow">→</span>
+          </a>
+
+          <a class="tool-card" href="https://irinabw98.github.io/CP_ANALISIS1" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">📊</span>
+            <span class="tool-copy">
+              <strong>CP_ANALISIS1</strong>
+              <small>ANOVA, Tukey y resultados descargables.</small>
+            </span>
+            <span class="tool-arrow">→</span>
+          </a>
+
+          <a class="tool-card" href="https://irinabw98.github.io/CP_FACTORIAL" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🧪</span>
+            <span class="tool-copy">
+              <strong>CP_FACTORIAL</strong>
+              <small>Análisis factoriales y comparación de factores.</small>
+            </span>
+            <span class="tool-arrow">→</span>
+          </a>
+
+          <div class="tool-card disabled" aria-disabled="true">
+            <span class="tool-icon">🚧</span>
+            <span class="tool-copy">
+              <strong>Próximamente</strong>
+              <small>Nuevas ideas en camino.</small>
+            </span>
+            <span class="tool-arrow">…</span>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <footer class="footer">Hecho por Irina Bottini · Irina Labs · espacio personal de desarrollo</footer>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
