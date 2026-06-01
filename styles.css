@@ -71,17 +71,43 @@ body{
 
 .floating-quotes span{
   position:absolute;
-  color:rgba(255,255,255,.14);
-  font-size:22px;
+  color:rgba(255,255,255,.72);
+  font-size:15px;
   font-weight:700;
   font-style:italic;
-  letter-spacing:.02em;
+  letter-spacing:.01em;
+  padding:14px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
 }
 
-.floating-quotes span:nth-child(1){top:12%;left:24%;transform:rotate(-6deg)}
-.floating-quotes span:nth-child(2){bottom:18%;right:12%;max-width:320px;transform:rotate(4deg)}
-.floating-quotes span:nth-child(3){top:38%;right:26%;transform:rotate(-5deg)}
-.floating-quotes span:nth-child(4){bottom:10%;left:16%;transform:rotate(5deg)}
+.floating-quotes span:nth-child(1){
+  top:18%;
+  left:34%;
+  transform:rotate(-9deg);
+}
+
+.floating-quotes span:nth-child(2){
+  top:42%;
+  left:48%;
+  max-width:320px;
+  transform:rotate(7deg);
+}
+
+.floating-quotes span:nth-child(3){
+  top:60%;
+  left:38%;
+  transform:rotate(-6deg);
+}
+
+.floating-quotes span:nth-child(4){
+  bottom:10%;
+  left:28%;
+  transform:rotate(8deg);
+}
 
 .left-panel{
   padding:34px 42px;
