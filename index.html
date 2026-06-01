@@ -20,9 +20,9 @@
     <span>Σ</span><span>r</span><span>H₀</span><span>β</span><span>★</span><span>∿</span>
   </div>
 
-  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Activar o pausar música ambiente">
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Abrir música ambiente">
     <span class="sound-dot"></span>
-    <span id="soundLabel">Música ambiente</span>
+    <span id="soundLabel">Rock nacional</span>
   </button>
 
   <main class="page-shell">
@@ -32,7 +32,14 @@
     <div class="sparkle s2">✧</div>
     <div class="sparkle s3">✦</div>
 
-    <section class="hero-band">
+    <div class="floating-quotes" aria-hidden="true">
+      <span>Todo este maldito sistema está mal.</span>
+      <span>¿No reconoces la dignidad cuando la ves?</span>
+      <span>Lisa estaría tomando notas.</span>
+      <span>No es un error, es una hipótesis.</span>
+    </div>
+
+    <section class="dashboard">
       <div class="collage" aria-hidden="true">
         <figure class="photo p1"><img src="assets/homer-1.jpg" alt="" /></figure>
         <figure class="photo p2"><img src="assets/homer-2.jpg" alt="" /></figure>
@@ -40,7 +47,7 @@
         <figure class="photo p4"><img src="assets/homer-4.jpg" alt="" /></figure>
       </div>
 
-      <article class="hero-content">
+      <article class="left-panel">
         <nav class="topbar">
           <div class="brand">
             <span class="brand-mark">IL</span>
@@ -52,101 +59,60 @@
           <span class="status-pill">espacio experimental</span>
         </nav>
 
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">cuaderno científico · herramientas en desarrollo</span>
-            <h1>Irina Labs</h1>
-            <p>
-              Un punto de entrada para mis herramientas de análisis, organización y visualización.
-              La idea es facilitar tareas técnicas, ordenar datos y ahorrar tiempo en el trabajo diario.
-            </p>
-            <div class="note-card">
-              Si algo está en desarrollo, se prueba, se mejora y se vuelve más útil. Gracias por usar este espacio experimental.
-            </div>
-          </div>
+        <span class="eyebrow">cuaderno científico · herramientas en desarrollo</span>
+        <h1>Irina Labs</h1>
+        <p>
+          Punto de entrada para herramientas de análisis, organización y visualización. La idea es facilitar tareas técnicas, ordenar datos y ahorrar tiempo.
+        </p>
 
-          <aside class="preview-zone" aria-label="Mini vistas de aplicaciones">
-            <div class="lisa-board">
-              <span class="board-title">r = corr(x,y)</span>
-              <span class="board-formula">ANOVA · Tukey · α · H₀</span>
-              <span class="board-pearl">○ ○ ○</span>
-              <span class="board-star">★</span>
-              <span class="board-sax">♬</span>
-            </div>
-            <div class="preview-card preview-analisis">
-              <div class="bar-chart"><i></i><i></i><i></i><i></i><i></i></div>
-              <strong>estadística aplicada</strong>
-            </div>
-            <div class="preview-card preview-factorial">
-              <div class="factor-grid"><i>A</i><i>B</i><i>A×B</i><i>α</i></div>
-              <strong>diseño experimental</strong>
-            </div>
-          </aside>
+        <div class="lisa-board" aria-label="Detalle visual científico">
+          <span class="board-title">r = corr(x,y)</span>
+          <span class="board-formula">ANOVA · Tukey · α · H₀</span>
+          <span class="board-pearl">○ ○ ○</span>
+          <span class="board-star">★</span>
+          <span class="board-sax">♬</span>
         </div>
       </article>
-    </section>
 
-    <section class="tools-section">
-      <div class="section-heading">
-        <span>Herramientas disponibles</span>
-        <h2>Launcher Irina Labs</h2>
-      </div>
+      <aside class="right-panel">
+        <div class="section-heading">
+          <span>Herramientas disponibles</span>
+          <h2>Launcher</h2>
+        </div>
 
-      <div class="tools-grid" aria-label="Accesos directos">
-        <a class="tool-card" href="https://irinabw98.github.io/CP_ANALISIS1/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">📊</span>
-          <span class="tool-copy">
-            <strong>CP Análisis</strong>
-            <small>ANOVA, Tukey, LSD y resultados descargables.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <a class="tool-card" href="https://irinabw98.github.io/CP_FACTORIAL/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">🧪</span>
-          <span class="tool-copy">
-            <strong>CP Factorial</strong>
-            <small>Análisis factorial, interacciones y tablas exportables.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <a class="tool-card" href="https://irinabw98.github.io/CP_Correlacion/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">🔬</span>
-          <span class="tool-copy">
-            <strong>CP Correlación</strong>
-            <small>Relación entre variables, agrupamientos y Excel final.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <a class="tool-card" href="https://irinabw98.github.io/EtiquetadorCP_2.0/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">🏷️</span>
-          <span class="tool-copy">
-            <strong>Etiquetador CP 2.0</strong>
-            <small>Etiquetado de fotos y generación de PowerPoint.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <a class="tool-card" href="https://irinabw98.github.io/Precipitaciones/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">🌧️</span>
-          <span class="tool-copy">
-            <strong>Precipitaciones</strong>
-            <small>Registro y visualización de datos de lluvia.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <a class="tool-card" href="https://irinabw98.github.io/etiquetadorCP/" target="_blank" rel="noopener noreferrer">
-          <span class="tool-icon">🖼️</span>
-          <span class="tool-copy">
-            <strong>Etiquetador CP clásico</strong>
-            <small>Versión previa del etiquetador de imágenes.</small>
-          </span>
-          <span class="tool-arrow">→</span>
-        </a>
-      </div>
+        <div class="tools-grid" aria-label="Accesos directos">
+          <a class="tool-card" href="https://irinabw98.github.io/CP_ANALISIS1/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">📊</span>
+            <span class="tool-copy"><strong>CP Análisis</strong><small>ANOVA, Tukey y LSD.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+          <a class="tool-card" href="https://irinabw98.github.io/CP_FACTORIAL/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🧪</span>
+            <span class="tool-copy"><strong>CP Factorial</strong><small>Factores e interacciones.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+          <a class="tool-card" href="https://irinabw98.github.io/CP_Correlacion/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🔬</span>
+            <span class="tool-copy"><strong>CP Correlación</strong><small>Relación entre variables.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+          <a class="tool-card" href="https://irinabw98.github.io/EtiquetadorCP_2.0/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🏷️</span>
+            <span class="tool-copy"><strong>Etiquetador CP 2.0</strong><small>Fotos y PowerPoint.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+          <a class="tool-card" href="https://irinabw98.github.io/Precipitaciones/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🌧️</span>
+            <span class="tool-copy"><strong>Precipitaciones</strong><small>Registro de lluvias.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+          <a class="tool-card" href="https://irinabw98.github.io/etiquetadorCP/" target="_blank" rel="noopener noreferrer">
+            <span class="tool-icon">🖼️</span>
+            <span class="tool-copy"><strong>Etiquetador clásico</strong><small>Versión anterior.</small></span>
+            <span class="tool-arrow">→</span>
+          </a>
+        </div>
+      </aside>
     </section>
 
     <footer class="footer">Irina Labs · herramientas experimentales para análisis, datos y visualización</footer>
