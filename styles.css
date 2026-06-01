@@ -69,6 +69,20 @@ body{
 .p3{width:240px;height:200px;left:7%;bottom:8%;transform:rotate(7deg)}
 .p4{width:190px;height:150px;right:8%;bottom:8%;transform:rotate(-7deg)}
 
+.floating-quotes span{
+  position:absolute;
+  color:rgba(255,255,255,.14);
+  font-size:22px;
+  font-weight:700;
+  font-style:italic;
+  letter-spacing:.02em;
+}
+
+.floating-quotes span:nth-child(1){top:12%;left:24%;transform:rotate(-6deg)}
+.floating-quotes span:nth-child(2){bottom:18%;right:12%;max-width:320px;transform:rotate(4deg)}
+.floating-quotes span:nth-child(3){top:38%;right:26%;transform:rotate(-5deg)}
+.floating-quotes span:nth-child(4){bottom:10%;left:16%;transform:rotate(5deg)}
+
 .left-panel{
   padding:34px 42px;
   position:relative;
@@ -178,14 +192,16 @@ p{
 }
 
 .tool-card{
-  min-height:108px;
-  padding:16px;
+  min-height:120px;
+  padding:18px;
   border-radius:24px;
   background:rgba(255,255,255,.07);
   border:1px solid rgba(255,255,255,.10);
   display:flex;
-  gap:12px;
-  align-items:flex-start;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
   text-decoration:none;
   color:var(--ink);
   transition:.2s ease;
@@ -195,29 +211,10 @@ p{
   background:rgba(255,255,255,.12);
   border-color:rgba(255,216,77,.28);
 }
-.tool-icon{font-size:24px}
-.tool-copy strong{display:block;font-size:14px;margin-bottom:6px}
-.tool-copy small{display:block;font-size:11px;line-height:1.5;color:var(--muted)}
-.tool-arrow{margin-left:auto;font-weight:900;font-size:18px}
-
-.sound-toggle{
-  position:fixed;
-  top:16px;
-  right:18px;
-  z-index:20;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.14);
-  background:rgba(255,255,255,.08);
-  color:var(--ink);
-  padding:10px 14px;
-  font-size:11px;
-  font-weight:800;
-  backdrop-filter:blur(12px);
-}
-.sound-dot{
-  width:8px;height:8px;border-radius:50%;display:inline-block;
-  background:var(--yellow);margin-right:8px;
-}
+.tool-icon{font-size:26px;margin-bottom:10px}
+.tool-copy strong{display:block;font-size:16px;margin-bottom:8px}
+.tool-copy small{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+.tool-arrow{display:none}
 
 .footer{
   text-align:center;
