@@ -1,20 +1,28 @@
-# Irina Labs
+# Irina Labs · Home institucional
 
-Cover page personal para reunir herramientas en desarrollo.
+Home para centralizar herramientas de análisis, creación de archivos y recursos complementarios.
 
-## Incluye
+## Cambios aplicados
 
-- Estética cálida, divertida y tipo laboratorio personal.
-- Collage de imágenes de fondo con animaciones suaves.
-- Tarjetas de acceso a Etiquetador CP, CP_ANALISIS1 y CP_FACTORIAL.
-- Placeholder de Próximamente.
-- Mini previews visuales de las apps.
-- Música ambiente original, activable con botón.
-- Transición cinematográfica de entrada.
+- Estética más institucional: base clara, tarjetas limpias, bordes suaves y paleta Bayer azul/verde combinada con violeta tenue.
+- Uso del logo en el encabezado.
+- Aviso visible de `Espacio de prueba` y mensaje para recibir sugerencias.
+- Secciones separadas:
+  - Tipos de análisis
+  - Creación de archivos
+  - Recursos y campus
+- Se agregó la tarjeta `Análisis Davis` como herramienta en desarrollo.
+- Se eliminaron fórmulas y referencias visuales tipo ANOVA de la pantalla principal.
+- Layout de ancho completo para escritorio.
+- Se agregaron accesos a `Columnas calculadas` y `Campus Bayer`.
 
-## Cómo publicarlo
+## Archivos
 
-Subir todos los archivos y la carpeta `assets` al repositorio `irinabottini` en la rama `main`.
-Luego revisar GitHub Pages en:
+- `index.html`
+- `styles.css`
+- `app.js`
+- `assets/bayer-logo.jpg`
 
-https://irinabw98.github.io/irinabottini/
+## Importante
+
+Revisar los links de GitHub Pages de `ColumnasCalculadas` y `CampusBayer`. Si el nombre exacto del repo cambia, modificar el atributo `href` de esas tarjetas en `index.html`.
